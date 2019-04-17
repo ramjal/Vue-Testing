@@ -16,14 +16,14 @@
         {{ message }}
         <span v-if="show"> - Now you see me :)</span>
     </div>
-
+    <hr>
     <div id="app-2">
         <span v-bind:title="message">
             Hover your mouse over me for a few seconds
             to see my dynamically bound title!
         </span>
     </div>
-
+    <hr>
     <div id="list-app">
         <ol>
             <li v-for="todo in todos">
@@ -31,9 +31,17 @@
             </li>
         </ol>
     </div>
-
-
-
+    <hr>
+    <div id="click-app">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse the above Message</button>
+    </div>    
+    <hr>
+    <div id="TwoWayBinding">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+    <hr>
 
     <script src="index.js"></script>
 </body>

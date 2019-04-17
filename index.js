@@ -26,3 +26,23 @@ var app3 = new Vue({
         ]
     }
 });
+
+var app4 = new Vue({
+    el: '#click-app',
+    data: {
+        message: 'Hello Vue!'
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
+
+});
+
+var app5 = new Vue({
+    el: '#TwoWayBinding',
+    data: {
+        message: 'Hello Vue! - TwoWayBinding'
+    }
+});
